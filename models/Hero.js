@@ -10,7 +10,11 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Hero.hasMany(models.Photo);
+      Hero.belongsToMany(models.Power, {
+        through: 'heroes_to_powers',
+        foreignKey: 'heroId'
+      });
     }
   }
   Hero.init({
@@ -44,9 +48,9 @@ module.exports = (sequelize, DataTypes) => {
       field: 'cath_phrase', 
       type:DataTypes.TEXT
     },
-    image: {
+  /*  image: {
       type: DataTypes.TEXT
-    }
+    }*/
   }, {
     sequelize,
     modelName: 'Hero',
