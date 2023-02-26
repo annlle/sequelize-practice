@@ -1,0 +1,6 @@
+PUT http://localhost:3000/api/powers/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "description": "An intuitive feeling, usually of something being dangerous or risky.It also help to navigate when unable to see, hear, or if he's disoriented."
+}
