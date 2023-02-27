@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const HeroController = require('../controllers/Hero.controller');
-const { getHeroInstance } = require('../middlewares/star.mv');
+const { getHeroInstance } = require('../middlewares/hero.mv');
 const pagination = require('../middlewares/pagination.mv');
 
 const heroRouter = Router();
