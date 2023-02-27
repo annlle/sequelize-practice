@@ -14,4 +14,8 @@ heroRouter.get('/:heroId/photos', HeroController.getHeroWithPhotos);
 heroRouter.put('/:heroId', getHeroInstance, HeroController.updateHero);
 heroRouter.delete('/:heroId', getHeroInstance, HeroController.deleteHero);
 
+<<<<<<< HEAD
 module.exports = heroRouter;
+=======
+module.exports = heroRouter;
+>>>>>>> 4b9c2cff02ddf7f1395535eac0b2c1a2316aa02c

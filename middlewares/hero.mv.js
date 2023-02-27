@@ -12,4 +12,4 @@ module.exports.getHeroInstance = async (req, res, next) => {
     } catch (error) {
         next(error);
     }
-}
+};
